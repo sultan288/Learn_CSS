@@ -1,0 +1,19 @@
+.container{
+    background: rgb(233, 221, 221);
+}
+.container div{
+    margin: 10px;
+    height: 150px;
+    width: 530px;
+    /* flex-basis: 530px; */
+    /* flex-grow: 0; */
+    /* flex-shrink: 1; */
+    grid-template: row / max-content;
+    
+}
+.container > div:nth-child(1n){
+    background-color: rgb(24, 207, 207);
+}
+.container > div:nth-child(2n){
+    background-color: rgb(103, 42, 160);
+}

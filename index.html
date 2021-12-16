@@ -5,8 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS grid</title>
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        .container{
+            height: 100%;
+            display: grid;
+            grid-gap: 2px;
+
+            grid-template-columns: repeat(5, 100px);
+            grid-template-rows: repeat(2, 90px);
+
+
+            /* justify-items: end;
+            align-items: start; */
+
+            /* justify-content: center;
+            align-content: center; */
+
+            /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+           
+            /* grid-template-rows: repeat(1, 1fr); */
+            /* grid-auto-rows: 1fr; or */
+            /* grid-auto-rows: 200px; */
+
+            /* grid-template-areas: 
+            "h h h h h h h h h h h h"
+            "m m m c c c c c c c c c"
+            ". . .f f f f f f f f f"; */
+        }
+
+        .seven{
+            justify-self: center;
+        }
+
+        /* grid row and column */
+        /* .header{
+            grid-column: 2 / -1;
+        }
+        .footer{
+            grid-column: 1 / -1;
+        }
+        .content{
+            grid-column: 2 / -1;
+        }
+        .menu{
+            grid-row: 1 / 3;
+        } */
+
+        /* grid template areas / grid-area */
+        /* .header{
+            grid-area: h;
+        }
+        .footer{
+            grid-area: f;
+        }
+        .content{
+            grid-area: c;
+        }
+        .menu{
+            grid-area: m;
+        } */
+        
+
+    </style>
 </head>
 <body>
-    This is grid tutorial.
+    <div class="container">
+        <!-- <div class="menu">MENU</div>
+        <div class="header">HEADER</div>       
+        <div class="content">CONTENT</div>
+        <div class="footer">FOOTER</div> -->
+
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div class="seven">7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>1</div>
+
+    </div>
 </body>
 </html>
